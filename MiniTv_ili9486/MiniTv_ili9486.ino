@@ -93,7 +93,7 @@ void setup()
 #elif defined(ESP32) && (CONFIG_IDF_TARGET_ESP32S2)
   esp_err_t ret_val = i2s_init(I2S_NUM_0, 44100, -1 /* MCLK */, 25 /* SCLK */, 26 /* LRCK */, 32 /* DOUT */, -1 /* DIN */);
 #elif defined(ESP32) && (CONFIG_IDF_TARGET_ESP32S3)
-  esp_err_t ret_val = i2s_init(I2S_NUM_0, 44100, -1 /* MCLK */, -1 /* SCLK */, -1 /* LRCK */, -1 /* DOUT */, -1 /* DIN */);
+  esp_err_t ret_val = i2s_init(I2S_NUM_0, 44100, -1 /* MCLK */, 39 /* SCLK */, 40 /* LRCK */, 41 /* DOUT */, -1 /* DIN */);
 #elif defined(ESP32) && (CONFIG_IDF_TARGET_ESP32C3)
   esp_err_t ret_val = i2s_init(I2S_NUM_0, 44100, -1 /* MCLK */, 10 /* SCLK */, 45 /* LRCK */, 32 /* DOUT */, -1 /* DIN */);
 #endif
